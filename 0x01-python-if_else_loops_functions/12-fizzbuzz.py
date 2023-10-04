@@ -2,11 +2,11 @@
 
 def fizzbuzz():
     for k in range(101):
-        if k % 3 == 0 and k > 0:
+        if k % 5 == 0 and k % 3 == 0 and k > 0:
+            print("FizzBuzz", end=" ")
+        elif k % 3 == 0 and k > 0:
             print("Fizz", end=" ")
         elif k % 5 == 0 and k > 0:
             print("Buzz", end=" ")
-        elif k % 5 == 0 and k % 3 == 0 and k > 0:
-            print("FizzBuzz", end=" ")
         else:
             print(str(k), end=" ")
