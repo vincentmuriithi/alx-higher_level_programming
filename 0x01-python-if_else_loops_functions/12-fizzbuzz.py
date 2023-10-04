@@ -9,4 +9,4 @@ def fizzbuzz():
         elif k % 5 == 0 and k % 3 == 0:
             print("FizzBuzz", end=" ")
         else:
-            print(k, end=" ")
+            print(str(k), end=" ")
