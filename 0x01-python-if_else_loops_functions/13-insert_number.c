@@ -19,7 +19,7 @@ if (new == NULL || (new->next == NULL && new->n >= number))
 {
 node->next = new;
 *head = node;
-return(node);
+return (node);
 }
 while (new && new->next != NULL && new->n <= number)
 {
@@ -27,6 +27,6 @@ new = new->next;
 
 }
 new->next = node;
-return(node);
+return (node);
 
 }
