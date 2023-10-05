@@ -26,6 +26,7 @@ while (new && new->next != NULL && new->n <= number)
 new = new->next;
 
 }
+node->next = new->next;
 new->next = node;
 return (node);
 
