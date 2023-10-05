@@ -15,13 +15,13 @@ return (NULL);
 node->n = number;
 node->next = NULL;
 
-if (new == NULL || (new->next == NULL && new->n >= number))
+if (new == NULL || new->n >= number)
 {
 node->next = new;
 *head = node;
 return (node);
 }
-while (new && new->next != NULL && new->next->n <= number)
+while (new && new->next != NULL && new->next->n < number)
 {
 new = new->next;
 
