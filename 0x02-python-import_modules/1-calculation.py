@@ -15,4 +15,4 @@ if __name__ == "__main__":
     ans = [r_add, r_sub, r_mul, r_div]
 
     for k in range(len(signs)):
-        print("{} {} {} = {}".format(a,signs[k], b, ans[k]))
+        print("{} {} {} = {}".format(a, signs[k], b, ans[k]))
