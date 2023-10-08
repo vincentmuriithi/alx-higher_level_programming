@@ -2,7 +2,9 @@
 from calculator_1 import add, sub, mul, div
 from sys import argv, exit
 
+
 def calculate(a, operator, b):
+
     if operator == "+":
         result = add(a, b)
     elif operator == "-":
@@ -16,6 +18,7 @@ def calculate(a, operator, b):
         exit(1)
 
     print("{} {} {} = {}".format(a, operator, b, result))
+
 
 if __name__ == "__main__":
     if len(argv) != 4:
