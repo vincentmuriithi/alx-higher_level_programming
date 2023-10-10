@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+# 1-element_at.py
+
 
 def element_at(my_list, idx):
-    if idx < o:
-        return None
-    for i, elem in enumerate(my_list):
-        if i == idx:
-            return elem
 
-    return None
+    if idx < 0 or idx > (len(my_list) - 1):
+        return None
+    return (my_list[idx])
