@@ -1,0 +1,10 @@
+>>> add_integer = __import__("0-add_integer").add_integer
+
+>>> add_integer(7, 7)
+14
+>>> add_integer(8.5, 9.678)
+17
+>>> add_integer("string", 9)
+a must be an integer
+>>> add_integer(89, "hello")
+b must be an integer
