@@ -4,6 +4,7 @@
 This code contains of a rectangle class and it's a module which is portable
 """
 
+
 class Rectangle:
     """
     class Rectangle contains various prperties of a rectangle
@@ -50,5 +51,3 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-
-
