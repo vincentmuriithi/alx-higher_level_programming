@@ -2,6 +2,7 @@
 
 import sys
 
+
 def is_safe(board, row, col, N):
     for i in range(col):
         if board[row][i] == 1:
@@ -13,6 +14,7 @@ def is_safe(board, row, col, N):
         if board[i][j] == 1:
             return False
     return True
+
 
 def solve_n_queens(N, board, col, solutions):
     if col == N:
@@ -31,6 +33,7 @@ def solve_n_queens(N, board, col, solutions):
             board[i][col] = 0
     return res
 
+
 def nqueens(N):
     if not N.isdigit():
         print("N must be a number")
@@ -44,6 +47,7 @@ def nqueens(N):
     solve_n_queens(N, board, 0, solutions)
     for sol in solutions:
         print(sol)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
