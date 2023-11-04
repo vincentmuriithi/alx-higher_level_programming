@@ -6,9 +6,9 @@
 #include <unicodeobject.h>
 
 /**
- * print_python_string - prints PyObject info about python strings
- * @p: pointer to pyobject
- */
+* print_python_string - prints PyObject info about python strings
+* @p: pointer to pyobject
+*/
 
 void print_python_string(PyObject *p)
 {
