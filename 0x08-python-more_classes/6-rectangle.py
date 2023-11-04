@@ -82,6 +82,7 @@ class Rectangle:
                     ["#" * self.__width for _ in range(self.__height)]
                     )
 
-    def __del__(self):
+    @classmethod        
+    def __del__(cls):
         print("Bye Rectangle...")
         Rectangle.number_of_instances -= 1
