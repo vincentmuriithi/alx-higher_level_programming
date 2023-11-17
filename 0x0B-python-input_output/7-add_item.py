@@ -1,22 +1,21 @@
 #!/usr/bin/python3
 
 """
-adds all arguments to a Python list
+Module that loads, adds and saves arguments to a Python list
 """
 
+from sys import argv
 
-import sys
-import json
-from 5-save_to_json_file import save_to_json_file
-from 6-load_from_json_file import load_from_json_file
 
-# Create the file if it doesn't exist
-open("add_item.json", "a").close()
+load_file = __import__('6-load_from_json_file').load_from_json_file
+save_file = __import__('5-save_to_json_file').save_to_json_file
 
 try:
-    i = load_from_json_file("add_item.json")
-except json.JSONDecodeError:
-    i = []
+    json_list = load_file('add_item.json')
+except (ValueError, FileNotFoundError):
+    json_list = []
 
-# Append command-line arguments to the list
-save_to_json_file(i + sys.argv[1:], "add_item.json")
+for item in argv[1:]:
+    json_list.append(item)
+
+save_file(json_list, 'add_item.json')
