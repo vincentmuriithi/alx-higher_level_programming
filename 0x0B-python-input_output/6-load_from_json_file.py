@@ -5,6 +5,8 @@ Defines a function that creates an object
 from json
 """
 
+import json
+
 
 def load_from_json_file(filename):
 
