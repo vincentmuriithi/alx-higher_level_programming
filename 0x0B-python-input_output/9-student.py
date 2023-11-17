@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 
 """
+Module defining a class
 """
 
 
 class Student:
     """
+    A student class
     """
+
     def __init__(self, first_name, last_name, age):
         """
-        derfines the variables for instatiation
+        defines the variables for instatiation
         """
         self.first_name = first_name
         self.last_name = last_name
