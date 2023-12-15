@@ -1,2 +1,2 @@
---Script that shows all the tables in your sql server
+-- Script that shows all the tables in your sql server
 SHOW TABLES;
