@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 // Script that reads and prints the content of a file
 
 const fs = require("fs");
