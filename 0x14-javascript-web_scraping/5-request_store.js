@@ -1,19 +1,6 @@
 #!/usr/bin/node
-//Script that saves the content
-//of a website into a file
+// Script that gets the contents of a webpage and stores it in a file
 
 const request = require('request');
 const fs = require('fs');
-const url = process.argv[2];
-const filePath = process.argv[3];
-
-request(url, (error, response, body)=> {
-	if (error)
-		console.error(error);
-	else{
-		fs.writeFile(filePath, body, 'utf-8', (err)=>{
-			if (err)
-				console.error(error);
-		});
-	}
-});
+request(process.argv[2]).pipe(fs.createWriteStream(process.argv[3]));
